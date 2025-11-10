@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic CSS & HTML Website</title>
+    <link rel="icon" href="img/HTML LOGO.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="header__h1">Website</h1>
+        <nav class="header__nav">
+            <ul class="header__ul">
+                <li>
+                    <a href="index.html">Menu</a>
+                </li>
+                <li>
+                    <a href="hours.html">Hours</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2 class="hero__h2">Faltie</h2>
+        <figure>
+            <img src="img/cloud.jpg" alt="Cloud" title="We love clouds!" width="1000"
+                height="667">
+            <figcaption class="offscreen">
+                Cloud
+            </figcaption>
+        </figure>
+    </section>
+
+    <main class="main">  
+
+        <article id="menu" class="main__article menu">
+            <h2 class="menu__h2">Our Menu</h2>
+            <table class="menu__container">
+                <caption class="offscreen">Our Walls</caption>
+                <thead>
+                    <tr>
+                        <th class="menu__header" scope="col">Wall</th>
+                        <th class="menu__header" scope="col">Qty</th>
+                        <th class="menu__header" scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="menu__item menu_cr" scope="row" rowspan="3">
+                            Crunchy
+                        </th>
+                        <td class="menu__item">1</td>
+                        <td class="menu__item">£1.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">£2.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">£3.25</td>
+                    </tr>
+                    <tr>
+                        <th class="menu__item menu_sf" scope="row" rowspan="3"> 
+                            Soft
+                        </th>
+                        <td class="menu__item">1</td>
+
+                        <td class="menu__item">£2.00</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">2</td>
+                        <td class="menu__item">£3.50</td>
+                    </tr>
+                    <tr>
+                        <td class="menu__item">3</td>
+                        <td class="menu__item">£4.50</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="menu__item menu_cs" colspan="3">
+                            Chips & Slalsa £4
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+            <br>
+            <p class="centre">
+            </p>
+        </article>
+    </main>
+    <footer class="footer">
+        <p class="footer__p">
+            <span class="nowrap">Copyright &copy;<time id="year"></time></span> 
+            <span class="nowrap">The Website</span></p>
+    </footer>
+</body>
+
+</html>
